@@ -1,0 +1,26 @@
+Nama: Hanif Sulistiya Nusa
+Tgl: 26/08/2020
+
+Summary
+
+Hari ini belajar mengenai github dan gitlab.
+dan pengaplikasian menggunakan gitbash untuk sinkronisasi data dari lokal dengan yg di web.
+
+git sebenarnya berfungsi sebagai repository, tempat penyimpanan.
+dan sebagai tracking ketika akan melakukan sebuah proyek bersama, sehingga mengetahui siapa yg terakhir kali mengedit dsbnya.
+
+salah satu website Git adalah Github dan Gitlab.
+pada hari ini kita berfokus untuk dapat melakukan beberapa perintah menggunakan gitbash untuk menyimpan dan menarik data dari web ke
+lokal atau dari lokal ke web.
+
+beberapa penjelasan dari command text yang digunakan bisa dilihat di bawah ini:
+
+apa itu git ? Git adalah salah satu system pengontrol yang berfungsi juga sebagai repository atau tempat penyimpanan
+untuk apa fungsi dari command :
+
+git init => untuk memulai membuat git repository kosong pada lokal drive yg telah dituju sebelumnya
+git remote add origin <link_name> => untuk memulai sinkronisasi jarak jauh antara lokal yang tadi telah dibuat dengan web Git yg dituju
+git add <file_name> => untuk menambahkan file yg dituju ke tempat penyimpanan sementara, jika dianalogikan sebagai sistem pengiriman barang,
+maka barang ini sudah masuk ke truk. di gerai sudah tidak ada, namun belum sampai ke tujuan
+git commit -m "<message_name>" => sebuah command text untuk memastikan bahwa data file yang dituju secara spesifik sudah benar dan siap untuk disimpan di web
+git push origin master => proses akhir untuk mengirimkan atau menyimpan data file sudah berhasil tersimpan di web
