@@ -1,0 +1,21 @@
+Nama: Hanif Sulistiya Nusa
+Tgl: 27/08/2020
+
+Summary
+
+Hari ini kita telah belajar lebih jauh dalam pengoperasian gitlab.
+salah satunya yakni membuat branches pada repo.
+kegiatan ini berguna apabila kita akan melakukan sebuah proyek bersama sehingga masing2 individu bisa membuat masing2 file yang nantinya
+akan di merge oleh PM (yang memegang kendali branch master).
+selain itu dipelajari juga beberapa command text baru diantaranya adalah membuat branches via terminal untuk local drive
+kemudian telah dilakukan juga proses push file yang di local ke gitlab, namun yang digaris bawahi jangan sampai salah alamat push.
+setelah branches terisi, maka proses selanjutnya adalah merge.
+perlu dicatat ketika untuk merge, delete source branch harus di "untick"
+lalu pada akhir kelas kita diberi tugas pair programming. membuat 1 web dengan minimal 2 pages. masing2 orang membuat branches yg
+terakhir akan di merge oleh PM.
+
+
+untuk apa fungsi dari command :
+
+git checkout -b <branch_name> => untuk membuat braches baru pada local melalui terminal 
+git pull origin <branch_name> => untuk menarik semua data dari branch web ke local
