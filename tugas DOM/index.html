@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES INCOME & EXPENSES</title>
+</head>
+<body>
+    <div class="container">
+        <h1>NOTES INCOME & EXPENSES</h1>
+        <form onsubmit="return submitHandler()">
+            <label for="task-title">Task</label>
+            <input type="text" name="task-title" id="task-title"/>
+            <select name="task-type" id="task-type">
+                <option value="income">Income</option>
+                <option value="outcome">Expenses</option>
+            </select>
+            <label for="task-total">Total</label>
+            <input type="text" name="task-total" id="task-total">
+            <input type="submit" value="Create Report" id="btn">
+        </form>
+    </div>
+    <hr/>
+    <div id="task-data">
+        <!-- <p>Coding javascript</p> -->
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
