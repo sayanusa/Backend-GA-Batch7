@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOTES INCOME & EXPENSES</title>
+    <title>Note Income Expenses</title>
 </head>
 <body>
     <div class="container">
-        <h1>NOTES INCOME & EXPENSES</h1>
+        <h1>Note Income Expenses</h1>
         <form onsubmit="return submitHandler()">
-            <label for="task-title">Task</label>
+            <label for="task-title">Note</label>
             <input type="text" name="task-title" id="task-title"/>
-            <select name="task-type" id="task-type">
+            <label for="task-title">Nominal</label>
+            <input type="text" name="task-total" id="task-total"/>
+            <select name="task-status" id="task-status">
                 <option value="income">Income</option>
-                <option value="outcome">Expenses</option>
+                <option value="outcome">Expense</option>
             </select>
-            <label for="task-total">Total</label>
-            <input type="text" name="task-total" id="task-total">
-            <input type="submit" value="Create Report" id="btn">
+            <input type="submit" value="Create Task" id="btn">
         </form>
     </div>
     <hr/>
@@ -25,5 +25,6 @@
         <!-- <p>Coding javascript</p> -->
     </div>
     <script src="js/index.js"></script>
+    <script src="css/style.css"></script>
 </body>
 </html>
