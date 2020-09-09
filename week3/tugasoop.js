@@ -1,10 +1,10 @@
 class Student {
-    constructor (){
-        this._name = '';
-        this._age = '';
-        this._dateOfBirth = '';
-        this._gender = '';
-        this.studentId = '';
+    constructor (name, age, dateOfBirth, gender, studentId){
+        this._name = name;
+        this._age = age;
+        this._dateOfBirth = dateOfBirth;
+        this._gender = gender;
+        this.studentId = studentId;
         this.hobbies = [];
     }
   
@@ -38,14 +38,18 @@ class Student {
   
     removeHobby (hobbies){
       //console.log(this.hobbies.length)
-      //console.log(this.hobbies[2]);
-    //   for(let i=0; i<this.hobbies.length; i++){
-    //     if(this.hobbies[i] !== hobbies){
-    //       this.hobbies.push(hobbies[i]);
-    //     } else {
-    //       //continue;
-    //     }
-    //   }
+      //console.log(this.hobbies[1]);
+      let remove = [];
+      for(let i=0; i<=this.hobbies.length; i++){
+        if(this.hobbies[i] !== hobbies){
+          remove.push(this.hobbies[i]);
+        } else {
+          continue;
+        }
+      }
+      this.hobbies = [];
+      this.hobbies.push(remove);
+      //console.log(remove);
     }
   
     get Data (){
@@ -72,10 +76,10 @@ class Student {
   Yonkou.addHobby('membunuh');
   Yonkou.addHobby('menyerang');
   Yonkou.addHobby('membajak');
+  console.log(Yonkou);
+  console.log(Yonkou.Data);
+  
   Yonkou.removeHobby('menyerang');
-  
-  
-  
   console.log(Yonkou);
   console.log(Yonkou.Data);
   
