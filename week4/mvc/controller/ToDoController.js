@@ -1,7 +1,7 @@
 const Product = require('../model/Product');
 const View = require('../view/View');
 
-class ProductController {
+class ProductController { //nama class fleksibel .....Controller tergantung kita mau buat apa
     static list(){
         //console.log('list di ProductController');
         const list = Product.list();
