@@ -27,8 +27,6 @@ class Product {
                 cb(null, tempData);
             }
         })
-        // return tempData;
-        // console.log("Stlh callback");
     }
 
     static add(params, cb){
