@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        body {
+            font-family: "Avenir", sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        th,td {
+            padding : 10px;
+        }
+        thead {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>ToDo List</h1>
+
+    <a href="/">Home</a>
+    <a href="/todolist">ToDo List</a>
+    <a href="/todolist/add">Add ToDo List</a>
+    
+    <p>Ini home page</p>
+    <!-- <%= todolist %>  <td><a href="students/delete/ <%= student.id %>">Delete</a></td>-->
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Task</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% ToDoTables.forEach(el => { %>
+                <tr>
+                    <td><%= el.id %></td>
+                    <td><%= el.task %></td>
+                    <td><%= el.status %></td>
+                   
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
