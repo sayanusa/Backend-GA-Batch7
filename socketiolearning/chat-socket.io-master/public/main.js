@@ -9,6 +9,8 @@ const messageInput = document.getElementById('message-input')
 
 const messageTone = new Audio('/message-tone.mp3')
 
+const formatMessage = require('./utils/messages');
+
 messageForm.addEventListener('submit', (e) => {
   e.preventDefault()
   sendMessage()
@@ -24,7 +26,7 @@ function sendMessage() {
   const data = {
     name: nameInput.value,
     message: messageInput.value,
-    dateTime: new Date(),
+    // dateTime: new Date(),
   }
   socket.emit('message', data)
   addMessageToUI(true, data)
